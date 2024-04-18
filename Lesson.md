@@ -63,12 +63,14 @@ print(f"The area of the rectangle is: {area} cm^2")
 
 With a function:
 ```python
-
+def rect_area(length: float, width: float):
+    area = length * width
+    print(area)
 ```
 
 ### Part (b) Use your function by calling it
-```
-
+```python
+rect_area(4, 5)
 ```
 
 <span style="color:red">
@@ -86,7 +88,15 @@ num = int(input("Enter a number: "))
 
 With a function:
 ```python
+def even_odd(num: int):
+    if num == 0:
+        print("0 is neither even nor odd.")
+    elif num % 2 == 0:
+        print(f"{num} is even.")
+    else:
+        print(f"{num} is odd.")
 
+even_odd(num)
 ```
 
 ## Why Use Functions?
